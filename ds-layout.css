@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+  padding: 2em;
+}
+
+section {
+  margin-bottom: 50px;
+  display:flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.content div {
+  padding: 1em;
+}
+
+.visual {
+  font-family: 'Work Sans';
+  width: 50%;
+}
+
+.code {
+  width: 30%;
+  font-family: monospace;
+}
+
+.titre {
+  width: 20%;
+  font-size: .8em;
+}
