@@ -4,19 +4,7 @@ $black: #333;
 $blue: #5020ee;
 $red: #ff3366;
 $light-grey: #c7c7c7;
-$medium-grey: #808080;
-
-.blue {
-  color: $blue;
-}
-
-.red {
-  color: $red;
-}
-
-.light-grey {
-  color: $light-grey;
-}
+$medium-grey: #828282;
 
 /* Buttons  */
 
@@ -76,6 +64,16 @@ $medium-grey: #808080;
     font-size: 14px;
     font-weight: 600;
     padding: .6rem 1.2rem;
+  }
+
+  &.btn-primary {
+    font-weight: 400;
+    background-color: $blue;
+    color: $white;
+
+    &:hover {
+      border-color: $white;
+    }
   }
 
 
@@ -149,6 +147,42 @@ $medium-grey: #808080;
 
 /* Typography */
 
-h1 {
+h1, h2, h3, .h1, .h2, .h3 {
+  margin: 0;
+}
 
+.task-title {
+  font-size: 18px;
+  color: $medium-grey;
+}
+
+.sub-title {
+  font-size: 12px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: $light-grey;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: $medium-grey;
+}
+
+label {
+  font-size: 14px;
+  color: $medium-grey;
+}
+
+a {
+  font-size: inherit;
+  color: $blue;
+
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-color: $blue;
+    transition: all 300ms ease;
+  }
 }
