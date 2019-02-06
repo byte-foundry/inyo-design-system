@@ -31,6 +31,7 @@ section {
 .code {
   width: 30%;
   font-family: monospace;
+  padding-left: 2em;
 }
 
 .titre {
