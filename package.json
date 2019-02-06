@@ -3,6 +3,6 @@
     "node-sass": "^4.11.0"
   },
   "scripts": {
-    "watch": "node-sass --watch inyo.scss inyo.css"
+    "watch": "node-sass --watch scss/inyo.scss css/inyo.css"
   }
 }

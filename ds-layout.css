@@ -1,6 +1,11 @@
 body {
   font-family: sans-serif;
   padding: 2em;
+  height: 100%;
+}
+
+.h2-like {
+  margin: 2em .5em;
 }
 
 section {
@@ -14,7 +19,7 @@ section {
   justify-content: space-around;
 }
 
-.content div {
+.content {
   padding: 1em;
 }
 
@@ -32,3 +37,12 @@ section {
   width: 20%;
   font-size: .8em;
 }
+
+.debug {
+  border: 1px solid red;
+  text-align: center;
+  padding: 1em;
+  justify-content: center;
+  color: red;
+}
+.page-wrapper { min-height: 80vh; }

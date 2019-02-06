@@ -2,8 +2,8 @@
 <html>
 <head>
 <title>Inyo - Design System</title>
-<link rel="stylesheet" type="text/css" href="inyo.css">
 <link rel="stylesheet" type="text/css" href="ds-layout.css">
+<link rel="stylesheet" type="text/css" href="css/inyo.css">
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700" rel="stylesheet">
 </head>
 
@@ -12,11 +12,13 @@
     <ul>
       <li><a href="#buttons">Buttons</a></li>
       <li><a href="#typography">Typography</a></li>
+      <li><a href="#components">Components</a></li>
+      <li><a href="layout.html">Layout</a></li>
     </ul>
   </header>
   <content>
     <section id="buttons">
-      <h2>Buttons</h2>
+      <h2 class="h2-like">Buttons</h2>
 
       <div class="content">
         <div class="titre">.btn-primary</div>
@@ -111,7 +113,15 @@
     </section>
 
     <section id="buttons">
-      <h2>Typography</h2>
+      <h2 class="h2-like">Typography</h2>
+
+      <div class="content">
+        <div class="titre">.project-title</div>
+        <div class="visual">
+          <span class="project-title">Titre d'un projet</span>
+        </div>
+        <div class="code">ok</div>
+      </div>
 
       <div class="content">
         <div class="titre">.task-title</div>
@@ -154,6 +164,33 @@
       </div>
 
     </section>
+
+    <section id="components">
+      <h2 class="h2-like">Components</h2>
+
+      <div class="content">
+        <div class="titre">.add-task input</div>
+        <div class="visual">
+          <div class="add-task">
+            <div class="add-task-icon">+</div>
+            <input type="text" name="" value="" placeholder="Ajouter une tâche…">
+          </div>
+        </div>
+        <div class="code">ok</div>
+      </div>
+
+      <div class="content">
+        <div class="titre">.comment-icon</div>
+        <div class="visual">
+          <div class="comment-icon">+</div>
+          <div class="comment-icon unread">13</div>
+          <div class="comment-icon read">4</div>
+        </div>
+        <div class="code">ok</div>
+      </div>
+
+    </section>
+
   </content>
 </body>
 </html>
