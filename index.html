@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>Inyo - Design System</title>
 <link rel="stylesheet" type="text/css" href="ds-layout.css">
 <link rel="stylesheet" type="text/css" href="css/inyo.css">
@@ -8,15 +9,33 @@
 </head>
 
 <body>
-  <header>
+  <h1>Inyo Design System</h1>
+  <header class="inyo-design-system">
     <ul>
+      <li><a href="#logos">Logos</a></li>
       <li><a href="#buttons">Buttons</a></li>
       <li><a href="#typography">Typography</a></li>
       <li><a href="#components">Components</a></li>
       <li><a href="layout.html">Layout</a></li>
     </ul>
+    <ul>
+      <li><a href="list-view.html">List view</a></li>
+    </ul>
   </header>
   <content>
+    <section id="logos">
+      <h2 class="h2-like">Logos</h2>
+
+      <div class="content">
+        <div class="titre">.logo-inyo-target</div>
+        <div class="visual">
+          <div class="logo-inyo-target"></div>
+        </div>
+        <div class="code">code à venir…</div>
+      </div>
+
+    </section>
+
     <section id="buttons">
       <h2 class="h2-like">Buttons</h2>
 
@@ -180,6 +199,25 @@
       </div>
 
       <div class="content">
+        <div class="titre">input datalist</div>
+        <div class="visual">
+          <div style="color: red; margin-bottom: 1em;">Requiert Polyfill pour Safari: <a style="color: red; text-decoration: underline;" href="https://www.npmjs.com/package/datalist-polyfill">https://www.npmjs.com/package/datalist-polyfill</a></div>
+          <div class="input-datalist">
+            <input placeholder="Tous les clients" list="clients" name="clients">
+            <datalist id="clients">
+              <option value="Client A">
+              <option value="Client B">
+              <option value="Nom de client plus long que les autres">
+              <option value="Client D">
+              <option value="Client E">
+            </datalist>
+            <div class="arrow"></div>
+          </div>
+        </div>
+        <div class="code">code à venir…</div>
+      </div>
+
+      <div class="content">
         <div class="titre">.comment-icon</div>
         <div class="visual">
           <div class="comment-icon">+</div>
@@ -226,7 +264,7 @@
                   </div>
                   <div class="task-infos-actions-item">
                     <div class="task-infos-icon icon-deadline "></div>
-                    <div class="task-infos-data">-</div>
+                    <div class="task-infos-data">—</div>
                   </div>
                   <div class="task-infos-actions-item">
                     <div class="task-infos-icon icon-client "></div>

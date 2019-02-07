@@ -4,6 +4,11 @@ body {
   height: 100%;
 }
 
+.inyo-design-system {
+  display: flex;
+  flex-direction: row;
+}
+
 .h2-like {
   margin: 2em .5em;
 }
