@@ -311,6 +311,75 @@ a {
 .category + .category {
   margin-left: .2rem; }
 
+.toggle-day-hour {
+  display: flex;
+  flex-direction: row; }
+  .toggle-day-hour input {
+    background-color: #F5F2FE;
+    border: none;
+    border-radius: 20px;
+    height: 27px;
+    padding: 0 2rem;
+    width: 20px;
+    margin-right: -1.2rem;
+    border: 1px solid transparent;
+    font-weight: 600;
+    color: #5020ee; }
+    .toggle-day-hour input:focus {
+      outline: none;
+      outline: 0;
+      box-shadow: none;
+      background: #FFF;
+      border: 1px solid #F5F2FE;
+      transition: all 400ms ease; }
+  .toggle-day-hour .switch {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 29px; }
+  .toggle-day-hour .switch-label {
+    position: absolute;
+    top: 20%;
+    color: #5020ee;
+    right: 1rem;
+    z-index: 1; }
+  .toggle-day-hour .switch-label:first-child {
+    left: 1rem; }
+  .toggle-day-hour .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+  .toggle-day-hour .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: -2px;
+    bottom: 0;
+    background-color: #FFF;
+    transition: .4s;
+    border-radius: 29px;
+    border: 2px solid #DDD; }
+  .toggle-day-hour .slider:before {
+    position: absolute;
+    content: "Jours";
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    line-height: 21px;
+    height: 21px;
+    width: auto;
+    left: 2px;
+    bottom: 2px;
+    background-color: #5020ee;
+    color: #FFF;
+    transition: .4s;
+    border-radius: 16px;
+    padding: 0 .8rem;
+    z-index: 2; }
+  .toggle-day-hour input:checked + .slider:before {
+    transform: translateX(29px);
+    content: "heures"; }
+
 .task {
   display: flex;
   flex-direction: row;
