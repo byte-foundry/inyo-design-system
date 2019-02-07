@@ -145,7 +145,8 @@ a {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
-    justify-content: center; }
+    justify-content: center;
+    padding-left: 5em; }
     .page-wrapper .content-wrapper .main-wrapper {
       flex: auto 1;
       max-width: 1200px; }
