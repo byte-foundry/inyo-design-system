@@ -53,6 +53,12 @@
     color: #FFF; }
     .btn.btn-primary:hover {
       border-color: #FFF; }
+  .btn.btn-naked {
+    border: 0;
+    padding: 0; }
+    .btn.btn-naked:hover {
+      background-color: inherit;
+      color: inherit; }
   .btn.btn-icon::before {
     margin-right: .4rem;
     color: #5020ee;
@@ -67,6 +73,9 @@
     content: "'↑'"; }
   .btn.btn-done::before {
     content: "✓"; }
+  .btn.btn-delete::before {
+    color: #ff3366;
+    content: "×"; }
   .btn.btn-red.btn-done::before {
     color: #ff3366; }
   .btn.btn-red.btn-done:hover {
@@ -175,6 +184,8 @@ a {
       padding-left: 30px; }
       .page-wrapper .content-wrapper .sidebar-wrapper .sub-section {
         margin: 3rem 0; }
+        .page-wrapper .content-wrapper .sidebar-wrapper .sub-section:first-child {
+          margin-top: 0; }
 
 .breadcrumb {
   display: flex;

@@ -87,6 +87,16 @@ $medium-grey: #888;
     }
   }
 
+  &.btn-naked {
+    border: 0;
+    padding: 0;
+
+    &:hover {
+      background-color: inherit;
+      color: inherit;
+    }
+  }
+
 
   &.btn-icon {
     &::before {
@@ -119,6 +129,13 @@ $medium-grey: #888;
   &.btn-done {
     &::before {
       content: "✓";
+    }
+  }
+
+  &.btn-delete {
+    &::before {
+      color: $red;
+      content: "×";
     }
   }
 
@@ -281,6 +298,10 @@ a {
 
       .sub-section {
         margin: 3rem 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
       }
     }
   }
