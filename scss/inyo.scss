@@ -18,6 +18,10 @@ $medium-grey: #888;
 
 /* Buttons  */
 
+.btn + .btn {
+  margin-left: 2rem;
+}
+
 .btn {
   font-size: 13px;
   padding: .3rem .8rem;
@@ -713,6 +717,58 @@ a {
   .task-infos-data {
     color: $blue;
     padding-bottom: 0;
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.6);
+  z-index: 100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .popup {
+    background-color: $white;
+    width:  600px;
+
+    padding: 2.5rem 3rem;
+
+    position: relative;
+    cursor: default;
+
+    &::after {
+      content: "×";
+      color: $red;
+      font-size: 2rem;
+
+      position: absolute;
+      top: -3rem;
+      right: -3rem;
+    }
+
+    .popup-header {
+      margin-bottom: 2.5rem;
+    }
+
+    .popup-content {
+      font-size: 16px;
+      line-height: 1.6;
+      color: $medium-grey;
+    }
+
+    .popup-footer {
+      margin-top: 2.5rem;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
   }
 }
 
