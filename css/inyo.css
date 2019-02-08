@@ -352,27 +352,39 @@ a {
 .category + .category {
   margin-left: .2rem; }
 
+.input-label {
+  display: flex;
+  flex-direction: column; }
+  .input-label label {
+    font-size: 12px;
+    margin-bottom: .8rem;
+    margin-left: 1rem; }
+
+input.rounded {
+  background-color: #F5F2FE;
+  border: none;
+  border-radius: 20px;
+  height: 27px;
+  padding: 0 1rem;
+  width: auto;
+  border: 1px solid transparent;
+  font-weight: 600;
+  color: #5020ee; }
+  input.rounded:focus {
+    outline: none;
+    outline: 0;
+    box-shadow: none;
+    background: #FFF;
+    border: 1px solid #F5F2FE;
+    transition: all 400ms ease; }
+
 .toggle-day-hour {
   display: flex;
   flex-direction: row; }
   .toggle-day-hour input {
-    background-color: #F5F2FE;
-    border: none;
-    border-radius: 20px;
-    height: 27px;
     padding: 0 2rem;
     width: 20px;
-    margin-right: -1.2rem;
-    border: 1px solid transparent;
-    font-weight: 600;
-    color: #5020ee; }
-    .toggle-day-hour input:focus {
-      outline: none;
-      outline: 0;
-      box-shadow: none;
-      background: #FFF;
-      border: 1px solid #F5F2FE;
-      transition: all 400ms ease; }
+    margin-right: -1.2rem; }
   .toggle-day-hour .switch {
     position: relative;
     display: inline-block;

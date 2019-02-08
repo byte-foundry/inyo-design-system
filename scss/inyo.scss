@@ -540,32 +540,52 @@ a {
   margin-left: .2rem;
 }
 
+.input-label {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 12px;
+    margin-bottom: .8rem;
+    margin-left: 1rem;
+  }
+  input {
+
+  }
+}
+
+input.rounded {
+  background-color: $light-blue;
+  border: none;
+  border-radius: 20px;
+  height: 27px;
+  padding: 0 1rem;
+  width: auto;
+  border: 1px solid transparent;
+  font-weight: 600;
+  color: $blue;
+
+  &:focus {
+    outline: none;
+    outline: 0;
+    box-shadow: none;
+
+    background: $white;
+    border: 1px solid $light-blue;
+
+    transition: all 400ms ease;
+  }
+}
+
+
 .toggle-day-hour {
   display: flex;
   flex-direction: row;
 
   input {
-    background-color: $light-blue;
-    border: none;
-    border-radius: 20px;
-    height: 27px;
     padding: 0 2rem;
     width: 20px;
     margin-right: -1.2rem;
-    border: 1px solid transparent;
-    font-weight: 600;
-    color: $blue;
-
-    &:focus {
-      outline: none;
-      outline: 0;
-      box-shadow: none;
-
-      background: $white;
-      border: 1px solid $light-blue;
-
-      transition: all 400ms ease;
-    }
   }
 
   .switch {
