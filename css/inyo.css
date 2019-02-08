@@ -560,6 +560,11 @@ input.rounded {
       flex-direction: row;
       justify-content: flex-end; }
 
+.animation-validation {
+  overflow: auto;
+  width: 26px;
+  height: 26px; }
+
 .add-task-icon {
   display: flex;
   justify-content: center;
