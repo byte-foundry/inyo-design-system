@@ -4,6 +4,21 @@ body {
   height: 100%;
 }
 
+.w50 {
+  width: calc( 50% - 20px );
+  float: left;
+}
+.w50 + .w50 {
+  margin-left: 40px;
+}
+.w100 {
+  width: 100%;
+  display: block;
+}
+.w100 + .w100 {
+  margin-top: 40px;
+}
+
 .inyo-design-system {
   display: flex;
   flex-direction: row;
@@ -22,10 +37,8 @@ section {
 .content {
   display: flex;
   justify-content: space-around;
-}
-
-.content {
   padding: 1em;
+  margin-bottom: 3em;
 }
 
 .visual {

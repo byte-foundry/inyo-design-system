@@ -78,7 +78,7 @@ $medium-grey: #888;
   &.btn-big {
     font-size: 14px;
     font-weight: 600;
-    padding: 1rem 1.8rem;
+    padding: .8rem 1.6rem;
   }
 
   &.btn-primary {
@@ -205,7 +205,8 @@ h2,
 }
 
 h3,
-.sub-title {
+.sub-title,
+legend {
   font-size: 12px;
   font-weight: normal;
   letter-spacing: .5px;
@@ -312,6 +313,38 @@ a {
 }
 
 // components
+
+fieldset {
+  padding: 30px;
+  padding-bottom: 5rem;
+  position: relative;
+  border: 1px solid $light-grey;
+  border-radius: 6px;
+
+  legend {
+    border: 12px solid $white;
+  }
+
+  button {
+    position: absolute;
+    transform: translate(0, 50%);
+    bottom: 0;
+    right: 30px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      right: -14px;
+      height: 100%;
+      width: 12px;
+      background-color: $white;
+    }
+    &::before {
+      left: -14px;
+    }
+  }
+}
 
 .loader-wrapper {
   background-color: $blue;

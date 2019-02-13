@@ -49,7 +49,7 @@
   .btn.btn-big {
     font-size: 14px;
     font-weight: 600;
-    padding: 1rem 1.8rem; }
+    padding: .8rem 1.6rem; }
   .btn.btn-primary {
     font-weight: 400;
     background-color: #5020ee;
@@ -118,7 +118,8 @@ h2,
   color: #888; }
 
 h3,
-.sub-title {
+.sub-title,
+legend {
   font-size: 12px;
   font-weight: normal;
   letter-spacing: .5px;
@@ -189,6 +190,29 @@ a {
         margin: 3rem 0; }
         .page-wrapper .content-wrapper .sidebar-wrapper .sub-section:first-child {
           margin-top: 0; }
+
+fieldset {
+  padding: 30px;
+  padding-bottom: 5rem;
+  position: relative;
+  border: 1px solid #DDD;
+  border-radius: 6px; }
+  fieldset legend {
+    border: 12px solid #FFF; }
+  fieldset button {
+    position: absolute;
+    transform: translate(0, 50%);
+    bottom: 0;
+    right: 30px; }
+    fieldset button::before, fieldset button::after {
+      content: "";
+      position: absolute;
+      right: -14px;
+      height: 100%;
+      width: 12px;
+      background-color: #FFF; }
+    fieldset button::before {
+      left: -14px; }
 
 .loader-wrapper {
   background-color: #5020ee;
